@@ -1,4 +1,3 @@
-
 %ModuleCode
 #include <ns3/mobility-model.h>
 #include <vns/ns3networkmodule.h>
@@ -42,17 +41,17 @@ using namespace vns;
 public:
 	NS3Network(const RoadNetwork* net);
 	virtual ~NS3Network();
-	virtual void initialize(Simulator*);
-	virtual void onVehicleCreated(Simulator*,SIP_PYOBJECT);
+	virtual void initialize(const Simulator*);
+	virtual void onVehicleCreated(const Simulator*,SIP_PYOBJECT);
 %MethodCode
 
 %End
-	virtual void onVehicleRemoved(Simulator*,PyObject*);
+	virtual void onVehicleRemoved(const Simulator*,PyObject*);
 %MethodCode
 
 %End
-	virtual void onSimulationStep(Simulator*);
-	virtual void finalize(Simulator*);
+	virtual void onSimulationStep(const Simulator*);
+	virtual void finalize(const Simulator*);
 
 	const RoadNetwork* getRoadNetwork();
 
