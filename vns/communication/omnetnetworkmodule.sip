@@ -1,4 +1,3 @@
-
 %ModuleCode
 #include <vns/omnetnetworkmodule.h>
 %End
@@ -84,10 +83,10 @@ public:
 %End
 	virtual ~OmnetNetworkModule();
 	
-	void onSimulationStart(Simulator* simulator);
-	void onSimulationStep(Simulator* simulator);
-	void onSimulationStop(Simulator* simulator);
-	void onVehicleCreated(Simulator* simulator, Vehicle* vehicle);
-	void onVehicleRemoved(Simulator* simulator, Vehicle* vehicle);
+	void onSimulationStart(const Simulator* simulator);
+	void onSimulationStep(const Simulator* simulator);
+	void onSimulationStop(const Simulator* simulator);
+	void onVehicleCreated(const Simulator* simulator, Vehicle* vehicle);
+	void onVehicleRemoved(const Simulator* simulator, Vehicle* vehicle);
 
 };
