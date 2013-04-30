@@ -14,6 +14,8 @@
 %Include road.sip
 %Include junction.sip
 %Include roadnetwork.sip
+%Include eventscheduler.sip
+%Include calendarscheduler.sip
 
 %Include driverinfo.sip
 %Include drivermodels/drivermodel.sip
@@ -79,4 +81,5 @@
 
 %Include communication/networkmodule.sip
 //%Include communication/ns3networkmodule.sip
-%Include communication/omnetnetworkmodule.sip
+//%Include communication/omnetnetworkmodule.sip
+%Include communication/simplenetworkmodule.sip

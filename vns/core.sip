@@ -54,3 +54,4 @@ const VehicleType TRAIN;
 void setNumberOfThreads(int nThreads);
 int getNumberOfThreads();
 int getThreadID();
+double getWTime();

@@ -33,17 +33,8 @@ public:
     float getAccel() const;
     void setUserData(void* data);
     void* getUserData() const;
-    SIP_PYOBJECT getNetworkNode() const /TransferBack/;
-%MethodCode
-        void* voidnode = sipCpp->getNetworkNode();
-        if( voidnode ) return sipConvertFromVoidPtr(voidnode);
-        return Py_None;
-%End
-    void setNetworkNode(SIP_PYOBJECT node /Transfer/ );
-%MethodCode
-        void* voidnode = sipConvertToVoidPtr(a0);
-		sipCpp->setNetworkNode(voidnode);
-%End
+    SIP_PYOBJECT getNetworkNode() const [void* () ];
+    void setNetworkNode(SIP_PYOBJECT node) [void (void *data)];
     //DriverModel* getDriverModel();
     const DriverModel* getDriverModel() const;
     bool isBraking() const;
