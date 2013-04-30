@@ -1,0 +1,21 @@
+In a command terminal enter the following commands:
+
+LINUX and OSX:
+	$ cd python-vns/
+	$ python configure.py
+	$ make
+	$ sudo make install
+
+That's it!
+
+python-vns dependencies: 
+	
+	-> libvns
+
+
+
+
+
+
+
+
