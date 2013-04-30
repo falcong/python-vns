@@ -33,8 +33,8 @@ public:
     float getAccel() const;
     void setUserData(void* data);
     void* getUserData() const;
-    SIP_PYOBJECT getNetworkNode() const [void* () ];
-    void setNetworkNode(SIP_PYOBJECT node) [void (void *data)];
+    //SIP_PYOBJECT getNetworkNode() const [void* () ];
+    //void setNetworkNode(SIP_PYOBJECT node) [void (void *data)];
     //DriverModel* getDriverModel();
     const DriverModel* getDriverModel() const;
     bool isBraking() const;
