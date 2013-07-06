@@ -22,6 +22,7 @@ public:
 	void setSinkRoads(RoutesGenerator::Type type);
 	void setHandler(PathFinderHandler* finderHandler);
 	void setRandomSeed(unsigned int rseed);
+	void setDriver(const DriverInfo& dr);
 
 	Routes* generate(int numberOfRoutes);
 	void generate(Routes* routes,int numberOfRoutes);

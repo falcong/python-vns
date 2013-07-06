@@ -22,6 +22,6 @@ public:
 	void setQueueSize(uint32 size);
 
 	RoadNetwork* createRoadNetwork() /TransferBack/;
-	Routes* createRoutes(RoadNetwork* network,int ncars,double simtime,VehicleType vType=vns::CAR) /TransferBack/;
+	Routes* createRoutes(RoadNetwork* network,int ncars,double simtime,VehicleType vType=vns::CAR,const DriverInfo& driver=CarDriver()) /TransferBack/;
 
 };

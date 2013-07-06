@@ -36,3 +36,14 @@ using namespace vns;
 public:
 	double calcT(double t,double meanHeadway) const;
 };
+
+class UniformDistribution : public GenerationFunction {
+
+%TypeHeaderCode
+#include <vns/generationfunction.h>
+using namespace vns;
+%End
+
+public:
+	double calcT(double t,double meanHeadway) const;
+};
